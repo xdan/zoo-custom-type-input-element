@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<element type="number" group="Form" orderable="true">
+	<name>Number</name>
+	<author>Chupurnov Valeriy</author>
+	<creationDate>April 2016</creationDate>
+	<copyright>Copyright (C) xdsoft.net</copyright>
+	<authorEmail>chupurnov@gmail.com</authorEmail>
+	<authorUrl>http://xdsoft.net</authorUrl>
+	<version>2.5.0</version>
+	<description>HTML Number</description>
+	<params>
+		<param name="default" type="text" default="" label="Default" description="" />
+		<param name="required" type="zoolist" default="0" label="Required" description="">
+            <option name="JYES">1</option>
+			<option name="JNO">0</option>
+        </param>
+        <param name="type" type="zoolist" default="number" label="Type" description="">
+            <option name="Number">number</option>
+			<option name="Text">text</option>
+			<option name="Phone">tel</option>
+			<option name="Url">url</option>
+			<option name="Mail">mail</option>
+        </param>
+	</params>
+	<params group="render">
+		<param name="separated_by" type="zoolist" default="Space" label="Separated by" description="CHOOSE_SEPARATOR_REPEATED_ELEMENTS">
+			<option name="Space"><![CDATA[separator=[ ]]]></option>
+			<option name="Comma"><![CDATA[separator=[, ]]]></option>
+			<option name="Hyphen"><![CDATA[separator=[ - ]]]></option>
+			<option name="Pipe"><![CDATA[separator=[ | ]]]></option>
+			<option name="Break"><![CDATA[separator=[<br />]]]></option>
+			<option name="Span"><![CDATA[tag=[<span>%s</span>]]]></option>
+			<option name="Paragraph"><![CDATA[tag=[<p>%s</p>]]]></option>
+			<option name="Div"><![CDATA[tag=[<div>%s</div>]]]></option>
+			<option name="List Item"><![CDATA[tag=[<li>%s</li>]]]></option>
+			<option name="Unordered List"><![CDATA[tag=[<li>%s</li>] enclosing_tag=[<ul>%s</ul>]]]></option>
+			<option name="Ordered List"><![CDATA[tag=[<li>%s</li>] enclosing_tag=[<ol>%s</ol>]]]></option>
+			<option name="Warp Item"><![CDATA[tag=[<article class="item">%s</article>]]]></option>
+			<option name="Blank"><![CDATA[tag=[%s]]]></option>
+			<option name="UIkit Block"><![CDATA[tag=[<div class="uk-margin">%s</div>]]]></option>
+			<option name="UIkit Article"><![CDATA[tag=[<article class="uk-article">%s</article>]]]></option>
+			<option name="UIkit List"><![CDATA[tag=[<li>%s</li>] enclosing_tag=[<ul class="uk-list">%s</ul>]]]></option>
+			<option name="UIkit List Line"><![CDATA[tag=[<li>%s</li>] enclosing_tag=[<ul class="uk-list uk-list-line">%s</ul>]]]></option>
+		</param>
+	</params>
+</element>
