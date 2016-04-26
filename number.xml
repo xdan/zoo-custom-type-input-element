@@ -10,6 +10,7 @@
 	<description>HTML Number</description>
 	<params>
 		<param name="default" type="text" default="" label="Default" description="" />
+		<param name="ext" type="text" default="" label="Extra" description="" />
 		<param name="required" type="zoolist" default="0" label="Required" description="">
             <option name="JYES">1</option>
 			<option name="JNO">0</option>
